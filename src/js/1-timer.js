@@ -65,7 +65,7 @@ function startTimer(event) {
     }
   
     const { days, hours, minutes, seconds } = convertMs(differens);
-    daysE.textContent = days;
+    daysE.textContent = addLeadingZero(days);
     hoursE.textContent = addLeadingZero(hours);
     minutesE.textContent = addLeadingZero(minutes);
     secondsE.textContent = addLeadingZero(seconds);
